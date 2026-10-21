@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../supabaseClient'
+import { wordList } from '../wordList'
 
 const AdminPanel = ({ onBackToGame }) => {
   const [allScores, setAllScores] = useState([])
@@ -63,12 +64,6 @@ const AdminPanel = ({ onBackToGame }) => {
   const renderWordSchedule = () => {
     // Calculate dates for each word based on the actual list
     const startDate = new Date('2025-08-28')
-    const wordList = [
-      'MUSIEL', 'GUITAR', 'GIBSON', 'BALLET', 'STAFFS', 'TREBLE', 'CHORUS', 'LEGATO',
-      'RHYTHM', 'MELODY', 'BRIDGE', 'ACCENT', 'OCTAVE', 'ENCORE', 'PHRASE', 'MANUAL', 'FUSSEL',
-      'REGGAE', 'TECHNO', 'COUNTRY', 'OPERA', 'BALLET', 'FLUTES',
-      'SONATA', 'TUNING', 'UNISON', 'VOLUME', 'DECAPO', 'STUDIO', 'BALLAD', 'ANTHEM'
-    ]
     
     const wordDates = wordList.map((word, index) => {
       const date = new Date(startDate)

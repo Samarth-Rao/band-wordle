@@ -8,8 +8,8 @@ export const WORD_LENGTH = 6
 export const wordList = [
   'MUSIEL', 'GUITAR', 'GIBSON', 'BALLET', 'STAFFS', 'TREBLE', 'CHORUS', 'LEGATO',
   'RHYTHM', 'MELODY', 'BRIDGE', 'ACCENT', 'OCTAVE', 'ENCORE', 'PHRASE', 'MANUAL', 'FUSSEL',
-  'REGGAE', 'TECHNO', 'COUNTRY', 'OPERA', 'BALLET', 'FLUTES',
-  'SONATA', 'TUNING', 'UNISON', 'VOLUME', 'DECAPO', 'STUDIO', 'BALLAD', 'ANTHEM'
+  'REGGAE', 'TECHNO', 'VIOLIN', 'CORNET', 'MINUET', 'FLUTES',
+  'SONATA', 'TUNING', 'UNISON', 'VOLUME', 'DACAPO', 'STUDIO', 'BALLAD', 'ANTHEM'
 ];
 
 // Get the word of the day based on the current date
