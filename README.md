@@ -4,13 +4,13 @@ A daily Wordle game themed around music and band instruments, featuring a rotati
 
 ## 🎮 Features
 
-- **Daily Word Rotation**: 5-letter words rotate daily based on the date
-- **Band/Music Theme**: 50+ music-related words (instruments, genres, terms)
+- **Daily Word Rotation**: 6-letter words rotate daily based on the date (weekdays only; no puzzle on weekends or Labor Day)
+- **Band/Music Theme**: ~30 music-related words (instruments, genres, terms)
 - **Standard Wordle Rules**: 6 guesses, colored feedback tiles
-- **Leaderboards**: Daily (fewest guesses) and monthly (total guesses) rankings
+- **Leaderboards**: Daily (fewest guesses) and monthly (most games solved, then fewest total guesses) rankings
 - **Score Submission**: Players can submit scores with nickname and section
 - **Mobile-Friendly**: Responsive design with Tailwind CSS
-- **Supabase Backend**: Free database hosting with real-time updates
+- **Supabase Backend**: Free database hosting
 
 ## 🚀 Quick Start
 
@@ -96,7 +96,7 @@ CREATE POLICY "Allow all operations" ON scores FOR ALL USING (true);
 
 ## 📱 Game Rules
 
-- **Objective**: Guess the 5-letter word in 6 attempts
+- **Objective**: Guess the 6-letter word in 6 attempts
 - **Feedback**:
   - 🟩 Green: Letter is correct and in right position
   - 🟨 Yellow: Letter is in word but wrong position
@@ -107,17 +107,17 @@ CREATE POLICY "Allow all operations" ON scores FOR ALL USING (true);
 
 ## 🎯 Word Categories
 
-The game includes 50+ music-related words:
-- **Instruments**: PIANO, GUITAR, DRUMS, FLUTE, TRUMPET
-- **Music Terms**: TEMPO, BEATS, RHYTHM, MELODY, HARMONY
-- **Genres**: ROCK, JAZZ, BLUES, FOLK, PUNK, METAL
-- **Band Related**: STAGE, MIC, AMP, MUSIC, SCORE
+The game includes ~30 music-related words, for example:
+- **Instruments**: GUITAR, GIBSON, FLUTES
+- **Music Terms**: RHYTHM, MELODY, TREBLE, OCTAVE, LEGATO, SONATA
+- **Genres**: REGGAE, TECHNO, BALLAD, ANTHEM
+- **Band Related**: CHORUS, ENCORE, STUDIO, TUNING, UNISON
 
 ## 🔧 Customization
 
 ### Adding More Words
 Edit `src/wordList.js` to add your own words. Make sure they are:
-- Exactly 5 letters long
+- Exactly 6 letters long
 - All uppercase
 - Music/band related
 

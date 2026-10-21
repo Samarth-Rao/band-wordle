@@ -19,7 +19,7 @@ git add .
 git commit -m "Initial commit: Band Wordle game"
 
 # Create a new repository on GitHub, then:
-git remote add origin https://github.com/yourusername/band-wordle.git
+git remote add origin https://github.com/Samarth-Rao/band-wordle.git
 git branch -M main
 git push -u origin main
 ```
