@@ -6,7 +6,7 @@ const PasswordScreen = ({ onPasswordCorrect, onCancel }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (password === 'altotenor') {
+    if (password === '7TzejVteLZ8e0v8Lv84kiCcv') {
       onPasswordCorrect()
     } else {
       setError('Incorrect password')
